@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>e-Recruitment Admin Portal</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          [(ngModel)]="loginRequest.username"
+          name="username"
+          class="form-control"
+          required
+        >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          [(ngModel)]="loginRequest.password"
+          name="password"
+          class="form-control"
+          required
+        >
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+      <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+</div>

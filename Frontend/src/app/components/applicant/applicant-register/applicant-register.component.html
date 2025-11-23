@@ -1,0 +1,85 @@
+<div class="container">
+  <h2>Welcome to PSIRA e-Recruitment</h2>
+  <h3>Please fill in your information and upload your CV</h3>
+
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Username (Email):</label>
+          <input type="email" [(ngModel)]="applicant.username" name="username" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="password" [(ngModel)]="applicant.password" name="password" class="form-control" 
+                 minlength="8" maxlength="20" required>
+        </div>
+
+        <div class="form-group">
+          <label>Confirm Password:</label>
+          <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>ID Number:</label>
+          <input type="text" [(ngModel)]="applicant.idNumber" name="idNumber" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" [(ngModel)]="applicant.name" name="name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Surname:</label>
+          <input type="text" [(ngModel)]="applicant.surname" name="surname" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Cellphone Number:</label>
+          <input type="tel" [(ngModel)]="applicant.cellphoneNumber" name="cellphoneNumber" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Work Number:</label>
+          <input type="tel" [(ngModel)]="applicant.workNumber" name="workNumber" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Home Address:</label>
+          <textarea [(ngModel)]="applicant.homeAddress" name="homeAddress" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Province:</label>
+          <select [(ngModel)]="applicant.province" name="province" class="form-control" required>
+            <option value="">Select Province</option>
+            <option *ngFor="let province of provinces" [value]="province">{{ province }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Upload CV (PDF):</label>
+          <input type="file" (change)="onFileSelected($event)" accept=".pdf" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" (click)="onCancel()" class="btn btn-secondary">Cancel</button>
+      <button type="button" (click)="onExit()" class="btn btn-secondary">Exit</button>
+    </div>
+  </form>
+</div>

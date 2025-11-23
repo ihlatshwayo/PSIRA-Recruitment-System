@@ -1,0 +1,75 @@
+<div class="container">
+  <h2>Complete the information to apply for the desired position</h2>
+  
+  <div *ngIf="jobPost" class="job-info">
+    <h3>You are applying for position: {{ jobPost.postName }}</h3>
+  </div>
+
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Highest Qualification:</label>
+      <select [(ngModel)]="application.highestQualification" name="highestQualification" class="form-control" required>
+        <option value="">Select Qualification</option>
+        <option *ngFor="let qual of qualificationOptions" [value]="qual">{{ qual }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Drivers License:</label>
+      <select [(ngModel)]="application.hasDriversLicense" name="hasDriversLicense" class="form-control" required>
+        <option [value]="false">No</option>
+        <option [value]="true">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Current Position:</label>
+      <input type="text" [(ngModel)]="application.currentPosition" name="currentPosition" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label>Company:</label>
+      <input type="text" [(ngModel)]="application.currentCompany" name="currentCompany" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label>Number of years employed with current employer:</label>
+      <select [(ngModel)]="application.yearsWithCurrentEmployer" name="yearsWithCurrentEmployer" class="form-control" required>
+        <option value="">Select</option>
+        <option *ngFor="let exp of experienceOptions" [value]="exp">{{ exp }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Current Annual Salary - CTC:</label>
+      <input type="number" [(ngModel)]="application.currentSalary" name="currentSalary" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label>Total Number of Experience in the field:</label>
+      <select [(ngModel)]="application.totalExperience" name="totalExperience" class="form-control" required>
+        <option value="">Select</option>
+        <option *ngFor="let exp of experienceOptions" [value]="exp">{{ exp }}</option>
+      </select>
+    </div>
+
+    <div class="disclaimer">
+      <p><strong>Disclaimer:</strong></p>
+      <p>By clicking apply button, I confirm that the information supplied is correct and that any incorrect information may prejudice me and I further agree for PSIRA to use my information to check my background.</p>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">APPLY</button>
+      <button type="button" (click)="onCancel()" class="btn btn-secondary">CANCEL</button>
+      <button type="button" (click)="onExit()" class="btn btn-secondary">EXIT</button>
+    </div>
+  </form>
+</div>

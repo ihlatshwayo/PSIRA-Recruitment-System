@@ -1,0 +1,78 @@
+<div class="container">
+  <h2>Sifting of CV's</h2>
+
+  <div class="form-group">
+    <label>Select Post:</label>
+    <select [(ngModel)]="selectedJobPostId" (change)="onJobPostChange()" class="form-control" name="selectedJobPost">
+      <option [ngValue]="null">Select Post</option>
+      <option *ngFor="let post of closedJobPosts" [ngValue]="post.id">
+        {{ post.postName }}
+      </option>
+    </select>
+    <p *ngIf="closedJobPosts.length === 0" class="text-muted">No closed posts available.</p>
+  </div>
+
+  <div *ngIf="jobPostDetails" class="job-post-details">
+    <div class="detail-row">
+      <strong>Closing Date:</strong> {{ jobPostDetails.closingDate | date:'dd MMMM yyyy' }}
+    </div>
+    <div class="detail-row">
+      <strong>Responsible Manager:</strong> {{ jobPostDetails.managerName }}
+    </div>
+    <div class="detail-row">
+      <strong>Manager Email:</strong> {{ jobPostDetails.managerEmail }}
+    </div>
+    <div class="detail-row">
+      <strong>Job Description:</strong> {{ jobPostDetails.jobDescription }}
+    </div>
+  </div>
+
+  <div *ngIf="summary" class="summary-section">
+    <h4>Summary Sifting:</h4>
+    <p>+ {{ summary.totalCandidates }} Candidates applied for the position</p>
+    <p>+ {{ summary.meetsRequirementsCount }} Candidate(s) meets the requirements</p>
+  </div>
+
+  <div *ngIf="isLoading" class="loading">
+    Loading sifting results...
+  </div>
+
+  <table *ngIf="siftingResults.length > 0" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Province</th>
+        <th>Drivers License</th>
+        <th>Qualification</th>
+        <th>Experience</th>
+        <th>Total Points</th>
+        <th>Meet Requirements</th>
+        <th>Review CV</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of siftingResults">
+        <td>{{ result.name }}</td>
+        <td>{{ result.surname }}</td>
+        <td>{{ result.province }}</td>
+        <td>{{ result.driversLicensePoints }}</td>
+        <td>{{ result.qualificationPoints }}</td>
+        <td>{{ result.experiencePoints }}</td>
+        <td>{{ result.totalPoints }}</td>
+        <td>{{ result.meetsRequirements ? 'Yes' : 'No' }}</td>
+        <td>
+          <button (click)="viewCV(result.cvFilePath)" class="btn btn-link">
+            Attached CV
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="siftingResults.length > 0" class="action-buttons">
+    <button (click)="emailManager()" class="btn btn-primary">Email Manager</button>
+    <button (click)="printToPDF()" class="btn btn-secondary">Print to PDF</button>
+    <button class="btn btn-secondary" (click)="onExit()">Exit</button>
+  </div>
+</div>

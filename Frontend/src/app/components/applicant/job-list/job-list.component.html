@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Welcome to PSIRA e-Recruitment</h2>
+  <p>To apply for a position, please click on "Click here to apply" next to the position you wish to apply for.</p>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>POST NAME</th>
+        <th>JOB REQUIREMENTS</th>
+        <th>CLOSING DATE</th>
+        <th>APPLY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let job of jobPosts">
+        <td>{{ job.postName }}</td>
+        <td>
+          <strong>Requirements:</strong> {{ job.qualificationRequired }} in relevant field, 
+          {{ job.experienceRequired }} years experience, 
+          {{ job.driversLicenseRequired ? 'Driving License required' : 'No driving license required' }}
+        </td>
+        <td>{{ job.closingDate | date:'dd MMM yyyy' }}</td>
+        <td>
+          <button (click)="applyForJob(job.id)" class="btn btn-primary">
+            Click here to apply
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="auth-links">
+    <p>Already have an account? <a routerLink="/applicant/login">Login here</a></p>
+    <p>New user? <a routerLink="/applicant/register">Register here</a></p>
+  </div>
+</div>

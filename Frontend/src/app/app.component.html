@@ -1,0 +1,26 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title }}</h1>
+    <div class="user-info" *ngIf="authService.isAdminLoggedIn() || authService.isApplicantLoggedIn()">
+      <span *ngIf="authService.isAdminLoggedIn()">
+        Welcome, {{ authService.getCurrentAdmin()?.name }} ({{ authService.getCurrentAdmin()?.position }})
+      </span>
+      <span *ngIf="authService.isApplicantLoggedIn()">
+        Welcome, {{ authService.getCurrentApplicant()?.name }} {{ authService.getCurrentApplicant()?.surname }}
+      </span>
+      <button (click)="logout()" class="btn btn-link">Logout</button>
+    </div>
+  </header>
+
+  <nav class="app-nav" *ngIf="authService.isAdminLoggedIn()">
+    <a routerLink="/admin/dashboard" routerLinkActive="active">Create New Post</a>
+    <a routerLink="/admin/sifting" routerLinkActive="active">Sifting of CV's</a>
+    <a href="#" class="disabled">Closed Posts</a>
+    <a href="#" class="disabled">Reports</a>
+    <a href="#" class="disabled">Auditing</a>
+  </nav>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>

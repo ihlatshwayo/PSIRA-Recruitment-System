@@ -1,0 +1,1424 @@
+2025-11-23 14:58:16.709 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 14:58:16.815 +02:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-11-23 15:00:25.712 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 15:00:25.797 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 15:00:25.803 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 15:00:25.805 +02:00 [INF] Hosting environment: Production
+2025-11-23 15:00:25.807 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 15:00:25.976 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 15:00:26.020 +02:00 [INF] Incoming request OPTIONS /api/auth/applicant-login
+2025-11-23 15:00:26.032 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:00:26.036 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:00:26.038 +02:00 [INF] Response 405 for OPTIONS /api/auth/applicant-login
+2025-11-23 15:00:26.044 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 405 0 null 69.3008ms
+2025-11-23 15:04:22.498 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 15:04:22.608 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 15:04:22.612 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 15:04:22.614 +02:00 [INF] Hosting environment: Production
+2025-11-23 15:04:22.617 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 15:04:22.836 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 15:04:22.888 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 52.7984ms
+2025-11-23 15:11:05.045 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 37
+2025-11-23 15:11:05.057 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:11:05.063 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 15:11:05.074 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:11:05.102 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 15:11:05.451 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 15:11:05.501 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 393.5392ms
+2025-11-23 15:11:05.504 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:11:05.506 +02:00 [INF] Response 400 for POST /api/auth/applicant-login
+2025-11-23 15:11:05.510 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 400 null application/problem+json; charset=utf-8 465.2435ms
+2025-11-23 15:11:46.273 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 63
+2025-11-23 15:11:46.280 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:11:46.282 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 15:11:46.284 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:11:46.286 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 15:11:47.387 +02:00 [INF] Executed DbCommand (118ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 15:11:47.409 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-23 15:11:47.414 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 1124.9331ms
+2025-11-23 15:11:47.416 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:11:47.418 +02:00 [INF] Response 401 for POST /api/auth/applicant-login
+2025-11-23 15:11:47.427 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 401 null text/plain; charset=utf-8 1154.2957ms
+2025-11-23 15:14:48.271 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 62
+2025-11-23 15:14:48.275 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:14:48.276 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 15:14:48.278 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:14:48.282 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 15:14:48.332 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 15:14:48.375 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 15:14:48.391 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 105.6342ms
+2025-11-23 15:14:48.394 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:14:48.395 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 15:14:48.398 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 126.5621ms
+2025-11-23 15:16:15.681 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 15:16:15.685 +02:00 [INF] Incoming request GET /api/auth/admin-login
+2025-11-23 15:16:15.693 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:16:15.695 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:16:15.698 +02:00 [INF] Response 405 for GET /api/auth/admin-login
+2025-11-23 15:16:15.700 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/auth/admin-login - 405 0 null 19.3787ms
+2025-11-23 15:16:23.991 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 15:16:23.995 +02:00 [INF] Incoming request GET /api/auth/admin-login
+2025-11-23 15:16:23.998 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:16:23.999 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 15:16:24.000 +02:00 [INF] Response 405 for GET /api/auth/admin-login
+2025-11-23 15:16:24.002 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/auth/admin-login - 405 0 null 11.7762ms
+2025-11-23 15:26:08.538 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 15:26:08.544 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:26:08.547 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 8.5641ms
+2025-11-23 15:26:08.553 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 15:26:08.557 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:26:08.558 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 15:26:08.560 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:26:08.562 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 15:26:08.675 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 15:26:08.680 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 15:26:08.683 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 118.1291ms
+2025-11-23 15:26:08.685 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 15:26:08.687 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 15:26:08.689 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 136.7848ms
+2025-11-23 15:26:08.828 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 15:26:08.833 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:26:08.835 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 6.3537ms
+2025-11-23 15:26:08.840 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 15:26:08.846 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:26:08.847 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 15:26:08.849 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 15:26:08.855 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 15:26:08.889 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 15:26:08.903 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 15:26:08.911 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 53.7015ms
+2025-11-23 15:26:08.913 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 15:26:08.915 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 15:26:08.918 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 77.2872ms
+2025-11-23 15:27:56.213 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 15:27:56.218 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:27:56.220 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 6.4168ms
+2025-11-23 15:27:56.226 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 300
+2025-11-23 15:27:56.230 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:27:56.231 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 15:27:56.233 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:27:56.237 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 15:27:56.266 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 15:27:56.269 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 28.9842ms
+2025-11-23 15:27:56.271 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:27:56.273 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 15:27:56.275 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/problem+json; charset=utf-8 49.6005ms
+2025-11-23 15:29:09.639 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 15:29:09.643 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:29:09.645 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 5.9511ms
+2025-11-23 15:29:09.651 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 300
+2025-11-23 15:29:09.654 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:29:09.655 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 15:29:09.657 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:29:09.659 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 15:29:09.664 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 15:29:09.666 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 4.7036ms
+2025-11-23 15:29:09.668 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:29:09.670 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 15:29:09.672 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/problem+json; charset=utf-8 21.6113ms
+2025-11-23 15:32:31.002 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 15:32:31.006 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:32:31.007 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 5.1208ms
+2025-11-23 15:32:31.012 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 300
+2025-11-23 15:32:31.015 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:32:31.016 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 15:32:31.018 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:32:31.020 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 15:32:31.024 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 15:32:31.026 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 4.0614ms
+2025-11-23 15:32:31.028 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:32:31.030 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 15:32:31.032 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/problem+json; charset=utf-8 19.5892ms
+2025-11-23 15:55:00.974 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 15:55:00.979 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:55:00.981 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.6373ms
+2025-11-23 15:55:00.988 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 300
+2025-11-23 15:55:00.991 +02:00 [INF] CORS policy execution successful.
+2025-11-23 15:55:00.993 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 15:55:00.995 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:55:00.997 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 15:55:01.063 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 15:55:01.065 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 63.9516ms
+2025-11-23 15:55:01.067 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 15:55:01.069 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 15:55:01.071 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/problem+json; charset=utf-8 83.7487ms
+2025-11-23 16:06:31.977 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:06:31.983 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:06:31.985 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 7.6746ms
+2025-11-23 16:06:31.991 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:06:31.995 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:06:31.996 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:06:32.001 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:06:32.004 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:06:32.135 +02:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:06:32.144 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:06:32.149 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 141.698ms
+2025-11-23 16:06:32.151 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:06:32.153 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:06:32.157 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 165.6668ms
+2025-11-23 16:12:47.002 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:12:47.009 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:12:47.011 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 8.7689ms
+2025-11-23 16:12:47.020 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:12:47.027 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:12:47.029 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:12:47.032 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:12:47.066 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:12:47.126 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:12:47.132 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:12:47.136 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 64.5655ms
+2025-11-23 16:12:47.140 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:12:47.143 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:12:47.147 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 126.4856ms
+2025-11-23 16:13:12.519 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 16:13:12.525 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:13:12.528 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 8.466ms
+2025-11-23 16:13:12.535 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 16:13:12.540 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:13:12.541 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 16:13:12.543 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:13:12.545 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 16:13:12.579 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 16:13:12.584 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 16:13:12.588 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 39.7262ms
+2025-11-23 16:13:12.594 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:13:12.595 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 16:13:12.603 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 68.187ms
+2025-11-23 16:13:12.741 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:13:12.747 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:13:12.750 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 8.4363ms
+2025-11-23 16:13:12.757 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:13:12.762 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:13:12.764 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:13:12.766 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:13:12.769 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:13:12.780 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:13:12.786 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:13:12.789 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 14.7937ms
+2025-11-23 16:13:12.793 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:13:12.795 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:13:12.798 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 41.3561ms
+2025-11-23 16:14:32.892 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 16:14:32.898 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:14:32.900 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.9261ms
+2025-11-23 16:14:32.909 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 324
+2025-11-23 16:14:32.914 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:14:32.916 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 16:14:32.921 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 16:14:32.923 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:14:32.973 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 16:14:32.977 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 49.108ms
+2025-11-23 16:14:32.980 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 16:14:32.983 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 16:14:32.987 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/problem+json; charset=utf-8 77.6901ms
+2025-11-23 16:28:10.102 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 16:28:10.271 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 16:28:10.280 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 16:28:10.283 +02:00 [INF] Hosting environment: Production
+2025-11-23 16:28:10.285 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 16:29:24.168 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 16:29:24.267 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:29:24.303 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 140.4233ms
+2025-11-23 16:29:24.320 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 16:29:24.338 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:29:24.355 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 16:29:24.402 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:29:24.476 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 16:29:26.685 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 16:29:26.840 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 16:29:26.912 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 2421.8533ms
+2025-11-23 16:29:26.916 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:29:26.918 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 16:29:26.942 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 2622.7586ms
+2025-11-23 16:29:27.093 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:29:27.101 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:29:27.104 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 11.306ms
+2025-11-23 16:29:27.114 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:29:27.123 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:29:27.126 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:29:27.136 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:29:27.144 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:29:27.237 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:29:27.273 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:29:27.320 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 171.2219ms
+2025-11-23 16:29:27.323 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:29:27.331 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:29:27.335 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 221.439ms
+2025-11-23 16:30:58.487 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 16:30:58.492 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:30:58.495 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.685ms
+2025-11-23 16:30:58.509 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 340
+2025-11-23 16:30:58.514 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:30:58.516 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 16:30:58.521 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 16:30:58.532 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:30:58.755 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__jobPost_BusinessUnitId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `BusinessUnits` AS `b`
+    WHERE `b`.`Id` = @__jobPost_BusinessUnitId_0)
+2025-11-23 16:30:59.040 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `JobPosts` (`BusinessUnitId`, `ClosingDate`, `CreatedAt`, `DriversLicenseRequired`, `ExperienceRequired`, `IsActive`, `JobDescription`, `ManagerEmail`, `ManagerName`, `OpeningDate`, `PostName`, `QualificationRequired`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT `Id`
+FROM `JobPosts`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-11-23 16:30:59.164 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:30:59.183 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 646.5391ms
+2025-11-23 16:30:59.188 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 16:30:59.192 +02:00 [INF] Response 200 for POST /api/jobposts
+2025-11-23 16:30:59.197 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 688.2493ms
+2025-11-23 16:38:53.468 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:38:53.475 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:38:53.476 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 8.5998ms
+2025-11-23 16:38:53.548 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:38:53.561 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:38:53.563 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:38:53.569 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:38:53.573 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:38:53.672 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:38:53.678 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:38:53.714 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 133.9784ms
+2025-11-23 16:38:53.758 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:38:53.774 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:38:53.870 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 322.4057ms
+2025-11-23 16:39:52.043 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 16:39:52.048 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:39:52.050 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 6.0881ms
+2025-11-23 16:39:52.065 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 16:39:52.070 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:39:52.071 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 16:39:52.073 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:39:52.075 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 16:39:52.107 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 16:39:52.114 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 16:39:52.117 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 35.0601ms
+2025-11-23 16:39:52.119 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:39:52.121 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 16:39:52.124 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 59.2625ms
+2025-11-23 16:39:52.224 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:39:52.228 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:39:52.230 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 6.2133ms
+2025-11-23 16:39:52.236 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:39:52.240 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:39:52.244 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:39:52.246 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:39:52.249 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:39:52.257 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:39:52.263 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:39:52.267 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 13.3594ms
+2025-11-23 16:39:52.271 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:39:52.274 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:39:52.280 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 43.6019ms
+2025-11-23 16:41:29.334 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:41:29.341 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:41:29.344 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 9.2152ms
+2025-11-23 16:41:29.353 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:41:29.362 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:41:29.365 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:41:29.382 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:41:29.392 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:41:29.410 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:41:29.415 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:41:29.419 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 16.7398ms
+2025-11-23 16:41:29.424 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:41:29.426 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:41:29.429 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 76.0876ms
+2025-11-23 16:43:41.037 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 16:43:41.045 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:43:41.049 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 11.3692ms
+2025-11-23 16:43:41.066 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 16:43:41.075 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:43:41.078 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 16:43:41.083 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:43:41.087 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 16:43:41.103 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 16:43:41.109 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 16:43:41.112 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 19.5596ms
+2025-11-23 16:43:41.115 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 16:43:41.117 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 16:43:41.120 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 53.5699ms
+2025-11-23 16:43:41.225 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 16:43:41.231 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:43:41.233 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 7.8988ms
+2025-11-23 16:43:41.239 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 16:43:41.244 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:43:41.246 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 16:43:41.249 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:43:41.251 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:43:41.259 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 16:43:41.265 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:43:41.269 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 14.1114ms
+2025-11-23 16:43:41.271 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 16:43:41.273 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 16:43:41.276 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 36.9636ms
+2025-11-23 16:44:50.660 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 16:44:50.667 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:44:50.669 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 8.6919ms
+2025-11-23 16:44:50.679 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 16:44:50.689 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:44:50.693 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 16:44:50.695 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:44:50.710 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:44:50.875 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 16:44:50.880 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:44:50.884 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 163.386ms
+2025-11-23 16:44:50.887 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:44:50.889 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 16:44:50.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 213.8349ms
+2025-11-23 16:45:22.980 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 16:45:22.985 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:45:22.987 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.443ms
+2025-11-23 16:45:23.006 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 16:45:23.010 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:45:23.012 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 16:45:23.014 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:45:23.022 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:45:23.049 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 16:45:23.071 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:45:23.074 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 47.4886ms
+2025-11-23 16:45:23.077 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:45:23.081 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 16:45:23.083 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 77.4312ms
+2025-11-23 16:46:19.105 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 16:46:19.109 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:46:19.111 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 6.5584ms
+2025-11-23 16:46:19.132 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 16:46:19.138 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:46:19.140 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 16:46:19.145 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:46:19.150 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:46:19.162 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 16:46:19.168 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 16:46:19.172 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 17.2863ms
+2025-11-23 16:46:19.174 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 16:46:19.182 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 16:46:19.186 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 53.7305ms
+2025-11-23 16:52:51.599 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundaryc11072b2fd5c44d3197368d229d067c8 105639
+2025-11-23 16:52:51.604 +02:00 [INF] CORS policy execution successful.
+2025-11-23 16:52:51.605 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 16:52:51.608 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 16:52:51.627 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 16:52:51.730 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 99.1758ms
+2025-11-23 16:52:51.735 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 16:52:51.747 +02:00 [ERR] Connection id "0HNHAJIPH61FE", Request id "0HNHAJIPH61FE:00000001": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at ApplicantsController.UploadCV(IFormFile file) in C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\Controllers\ApplicantsController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\Program.cs:line 64
+--- End of stack trace from previous location ---
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\Program.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-11-23 16:52:51.840 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 500 0 null 241.251ms
+2025-11-23 16:57:55.271 +02:00 [INF] Application is shutting down...
+2025-11-23 16:59:48.796 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 16:59:48.961 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 16:59:48.968 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 16:59:48.970 +02:00 [INF] Hosting environment: Production
+2025-11-23 16:59:48.972 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 17:00:03.647 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundary27a4d8e758e83003e0708fc1ef6ccbad 105639
+2025-11-23 17:00:03.728 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:03.737 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 17:00:03.799 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:03.855 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:00:04.501 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 17:00:04.711 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 842.5671ms
+2025-11-23 17:00:04.721 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:04.730 +02:00 [INF] Response 200 for POST /api/applicants/upload-cv
+2025-11-23 17:00:04.755 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 200 null application/json; charset=utf-8 1108.595ms
+2025-11-23 17:00:04.807 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - null null
+2025-11-23 17:00:04.827 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:04.833 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - 204 null null 27.3582ms
+2025-11-23 17:00:04.841 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/register - application/json 366
+2025-11-23 17:00:04.852 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:04.854 +02:00 [INF] Incoming request POST /api/applicants/register
+2025-11-23 17:00:04.864 +02:00 [INF] Executing endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:04.875 +02:00 [INF] Route matched with {action = "RegisterApplicant", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterApplicant(Applicant) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:00:05.017 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 17:00:05.109 +02:00 [INF] Executed action ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend) in 223.909ms
+2025-11-23 17:00:05.113 +02:00 [INF] Executed endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:05.116 +02:00 [INF] Response 400 for POST /api/applicants/register
+2025-11-23 17:00:05.120 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/register - 400 null application/problem+json; charset=utf-8 278.7863ms
+2025-11-23 17:00:12.701 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundary9f38334f1046ae90a6da7acaf7c1bea4 105639
+2025-11-23 17:00:12.710 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:12.713 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 17:00:12.719 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:12.723 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:00:12.757 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 17:00:12.762 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 33.0089ms
+2025-11-23 17:00:12.768 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:12.777 +02:00 [INF] Response 200 for POST /api/applicants/upload-cv
+2025-11-23 17:00:12.785 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 200 null application/json; charset=utf-8 84.1816ms
+2025-11-23 17:00:12.837 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - null null
+2025-11-23 17:00:12.843 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:12.845 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - 204 null null 8.1193ms
+2025-11-23 17:00:12.851 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/register - application/json 366
+2025-11-23 17:00:12.856 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:00:12.858 +02:00 [INF] Incoming request POST /api/applicants/register
+2025-11-23 17:00:12.861 +02:00 [INF] Executing endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:12.863 +02:00 [INF] Route matched with {action = "RegisterApplicant", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterApplicant(Applicant) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:00:12.869 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 17:00:12.873 +02:00 [INF] Executed action ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend) in 5.7883ms
+2025-11-23 17:00:12.877 +02:00 [INF] Executed endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:00:12.879 +02:00 [INF] Response 400 for POST /api/applicants/register
+2025-11-23 17:00:12.882 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/register - 400 null application/problem+json; charset=utf-8 31.2185ms
+2025-11-23 17:06:46.921 +02:00 [INF] Application is shutting down...
+2025-11-23 17:07:06.481 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 17:07:06.561 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 17:07:06.564 +02:00 [INF] Hosting environment: Production
+2025-11-23 17:07:06.567 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 17:07:52.843 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundarybb2bf504ed7fc8162b7be948316d014f 105639
+2025-11-23 17:07:52.919 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:07:52.928 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 17:07:52.947 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:07:53.002 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:07:53.603 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 17:07:53.729 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 719.4628ms
+2025-11-23 17:07:53.737 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:07:53.743 +02:00 [INF] Response 200 for POST /api/applicants/upload-cv
+2025-11-23 17:07:53.757 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 200 null application/json; charset=utf-8 918.1245ms
+2025-11-23 17:07:53.780 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - null null
+2025-11-23 17:07:53.792 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:07:53.799 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - 204 null null 19.667ms
+2025-11-23 17:07:53.807 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/register - application/json 373
+2025-11-23 17:07:53.817 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:07:53.819 +02:00 [INF] Incoming request POST /api/applicants/register
+2025-11-23 17:07:53.823 +02:00 [INF] Executing endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:07:53.832 +02:00 [INF] Route matched with {action = "RegisterApplicant", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterApplicant(Applicant) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:07:53.954 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 17:07:54.024 +02:00 [INF] Executed action ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend) in 186.3094ms
+2025-11-23 17:07:54.031 +02:00 [INF] Executed endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:07:54.035 +02:00 [INF] Response 400 for POST /api/applicants/register
+2025-11-23 17:07:54.040 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/register - 400 null application/problem+json; charset=utf-8 233.3161ms
+2025-11-23 17:13:09.472 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundary4eabe22bb400a814b431a5ea9240feab 105639
+2025-11-23 17:13:09.482 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:13:09.485 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 17:13:09.492 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:13:09.496 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:13:09.576 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 17:13:09.581 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 78.3491ms
+2025-11-23 17:13:09.584 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:13:09.587 +02:00 [INF] Response 200 for POST /api/applicants/upload-cv
+2025-11-23 17:13:09.599 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 200 null application/json; charset=utf-8 126.7126ms
+2025-11-23 17:13:09.654 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - null null
+2025-11-23 17:13:09.661 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:13:09.665 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - 204 null null 10.4186ms
+2025-11-23 17:13:09.671 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/register - application/json 391
+2025-11-23 17:13:09.676 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:13:09.680 +02:00 [INF] Incoming request POST /api/applicants/register
+2025-11-23 17:13:09.683 +02:00 [INF] Executing endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:13:09.686 +02:00 [INF] Route matched with {action = "RegisterApplicant", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterApplicant(Applicant) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:13:09.695 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 17:13:09.699 +02:00 [INF] Executed action ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend) in 9.5838ms
+2025-11-23 17:13:09.702 +02:00 [INF] Executed endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:13:09.704 +02:00 [INF] Response 400 for POST /api/applicants/register
+2025-11-23 17:13:09.708 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/register - 400 null application/problem+json; charset=utf-8 37.2852ms
+2025-11-23 17:47:49.277 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - multipart/form-data; boundary=----geckoformboundaryc28a522c30bba63271885d2de6398a6a 105639
+2025-11-23 17:47:49.287 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:47:49.290 +02:00 [INF] Incoming request POST /api/applicants/upload-cv
+2025-11-23 17:47:49.295 +02:00 [INF] Executing endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:47:49.298 +02:00 [INF] Route matched with {action = "UploadCV", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCV(Microsoft.AspNetCore.Http.IFormFile) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:47:49.385 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 17:47:49.392 +02:00 [INF] Executed action ApplicantsController.UploadCV (PSIRA-Recruitment-Backend) in 90.6361ms
+2025-11-23 17:47:49.396 +02:00 [INF] Executed endpoint 'ApplicantsController.UploadCV (PSIRA-Recruitment-Backend)'
+2025-11-23 17:47:49.399 +02:00 [INF] Response 200 for POST /api/applicants/upload-cv
+2025-11-23 17:47:49.405 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/upload-cv - 200 null application/json; charset=utf-8 128.6461ms
+2025-11-23 17:47:49.487 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - null null
+2025-11-23 17:47:49.493 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:47:49.495 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/register - 204 null null 8.169ms
+2025-11-23 17:47:49.500 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/register - application/json 415
+2025-11-23 17:47:49.544 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:47:49.547 +02:00 [INF] Incoming request POST /api/applicants/register
+2025-11-23 17:47:49.550 +02:00 [INF] Executing endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:47:49.553 +02:00 [INF] Route matched with {action = "RegisterApplicant", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterApplicant(Applicant) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:47:51.730 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[@__applicant_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Applicants` AS `a`
+    WHERE `a`.`Username` = @__applicant_Username_0)
+2025-11-23 17:47:52.124 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Applicants` (`CVFilePath`, `CellphoneNumber`, `CreatedAt`, `Email`, `HomeAddress`, `IDNumber`, `Name`, `Password`, `Province`, `Surname`, `Username`, `WorkNumber`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT `Id`
+FROM `Applicants`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-11-23 17:47:52.183 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 17:47:52.207 +02:00 [INF] Executed action ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend) in 2648.9438ms
+2025-11-23 17:47:52.210 +02:00 [INF] Executed endpoint 'ApplicantsController.RegisterApplicant (PSIRA-Recruitment-Backend)'
+2025-11-23 17:47:52.212 +02:00 [INF] Response 200 for POST /api/applicants/register
+2025-11-23 17:47:52.230 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/register - 200 null application/json; charset=utf-8 2729.5888ms
+2025-11-23 17:49:12.619 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 17:49:12.625 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:49:12.628 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 9.0828ms
+2025-11-23 17:49:12.689 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 17:49:12.697 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:49:12.699 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 17:49:12.706 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 17:49:12.714 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 17:49:12.871 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 17:49:12.881 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 17:49:12.890 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 168.1929ms
+2025-11-23 17:49:12.893 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 17:49:12.896 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 17:49:12.899 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 209.9877ms
+2025-11-23 17:49:13.046 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 17:49:13.050 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:49:13.052 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 5.6494ms
+2025-11-23 17:49:13.064 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 17:49:13.070 +02:00 [INF] CORS policy execution successful.
+2025-11-23 17:49:13.072 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 17:49:13.083 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 17:49:13.089 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 17:49:13.413 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 17:49:13.480 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 17:49:13.492 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 397.745ms
+2025-11-23 17:49:13.495 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 17:49:13.497 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 17:49:13.500 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 436.1943ms
+2025-11-23 18:01:14.279 +02:00 [INF] Application is shutting down...
+2025-11-23 18:01:37.585 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 18:01:37.662 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 18:01:37.665 +02:00 [INF] Hosting environment: Production
+2025-11-23 18:01:37.666 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 18:05:38.052 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 18:05:38.132 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:05:38.145 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 96.6194ms
+2025-11-23 18:05:38.173 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 18:05:38.193 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:05:38.218 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 18:05:38.260 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:05:38.318 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:05:40.423 +02:00 [INF] Executed DbCommand (131ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:05:40.592 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:05:40.693 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 2363.7654ms
+2025-11-23 18:05:40.697 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:05:40.700 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 18:05:40.730 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 2557.3578ms
+2025-11-23 18:05:40.860 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:05:40.869 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:05:40.872 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 11.1329ms
+2025-11-23 18:05:40.879 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:05:40.886 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:05:40.889 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:05:40.901 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:05:40.910 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:05:41.107 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:05:41.213 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:05:41.243 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 329.2269ms
+2025-11-23 18:05:41.247 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:05:41.253 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:05:41.257 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 377.3146ms
+2025-11-23 18:06:32.719 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 18:06:32.729 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:06:32.735 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 15.749ms
+2025-11-23 18:06:32.747 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 18:06:32.753 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:06:32.755 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 18:06:32.760 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:06:32.768 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:06:32.991 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:06:33.023 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 18:06:33.032 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 253.5784ms
+2025-11-23 18:06:33.036 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:06:33.038 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 18:06:33.041 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 294.3992ms
+2025-11-23 18:06:33.193 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 18:06:33.199 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:06:33.201 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 7.9761ms
+2025-11-23 18:06:33.209 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 18:06:33.224 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:06:33.227 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 18:06:33.233 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:06:33.239 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:06:33.267 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 18:06:33.272 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:06:33.276 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 27.655ms
+2025-11-23 18:06:33.279 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:06:33.283 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 18:06:33.285 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 76.3675ms
+2025-11-23 18:07:28.974 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 18:07:28.981 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:07:28.983 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 9.0183ms
+2025-11-23 18:07:28.995 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 18:07:29.006 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:07:29.009 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 18:07:29.012 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:07:29.020 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:07:29.065 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 18:07:29.073 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:07:29.076 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 48.9316ms
+2025-11-23 18:07:29.079 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:07:29.081 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 18:07:29.083 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 88.1631ms
+2025-11-23 18:07:37.000 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 18:07:37.006 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:07:37.009 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 9.1639ms
+2025-11-23 18:07:37.025 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 18:07:37.035 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:07:37.040 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 18:07:37.044 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:07:37.047 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:07:37.077 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 18:07:37.084 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:07:37.087 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 16.7969ms
+2025-11-23 18:07:37.091 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:07:37.094 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 18:07:37.097 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 71.9446ms
+2025-11-23 18:08:52.480 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:08:52.491 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:08:52.493 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 12.4206ms
+2025-11-23 18:08:52.503 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 332
+2025-11-23 18:08:52.509 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:08:52.513 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 18:08:52.517 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 18:08:52.525 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:08:52.580 +02:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 18:08:52.587 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 58.8246ms
+2025-11-23 18:08:52.590 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 18:08:52.593 +02:00 [INF] Response 400 for POST /api/jobposts
+2025-11-23 18:08:52.596 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 400 null application/json; charset=utf-8 92.8196ms
+2025-11-23 18:10:05.157 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:10:05.163 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:10:05.165 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.6292ms
+2025-11-23 18:10:05.171 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/jobposts - application/json 334
+2025-11-23 18:10:05.177 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:10:05.179 +02:00 [INF] Incoming request POST /api/jobposts
+2025-11-23 18:10:05.183 +02:00 [INF] Executing endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 18:10:05.186 +02:00 [INF] Route matched with {action = "CreateJobPost", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJobPost(JobPost) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:10:05.226 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__jobPost_BusinessUnitId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `BusinessUnits` AS `b`
+    WHERE `b`.`Id` = @__jobPost_BusinessUnitId_0)
+2025-11-23 18:10:05.479 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `JobPosts` (`BusinessUnitId`, `ClosingDate`, `CreatedAt`, `DriversLicenseRequired`, `ExperienceRequired`, `IsActive`, `JobDescription`, `ManagerEmail`, `ManagerName`, `OpeningDate`, `PostName`, `QualificationRequired`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT `Id`
+FROM `JobPosts`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-11-23 18:10:05.542 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:10:05.548 +02:00 [INF] Executed action JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend) in 358.977ms
+2025-11-23 18:10:05.551 +02:00 [INF] Executed endpoint 'JobPostsController.CreateJobPost (PSIRA-Recruitment-Backend)'
+2025-11-23 18:10:05.555 +02:00 [INF] Response 200 for POST /api/jobposts
+2025-11-23 18:10:05.560 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 389.4747ms
+2025-11-23 18:10:51.350 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 18:10:51.359 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:10:51.363 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 13.1875ms
+2025-11-23 18:10:51.406 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 18:10:51.413 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:10:51.415 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 18:10:51.422 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:10:51.426 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:10:51.447 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 18:10:51.452 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:10:51.456 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 25.1437ms
+2025-11-23 18:10:51.462 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:10:51.466 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 18:10:51.470 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 64.0074ms
+2025-11-23 18:14:21.463 +02:00 [INF] Application is shutting down...
+2025-11-23 18:14:34.936 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 18:14:34.993 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 18:14:34.995 +02:00 [INF] Hosting environment: Production
+2025-11-23 18:14:34.996 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 18:15:18.186 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 18:15:18.229 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:15:18.242 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 58.5806ms
+2025-11-23 18:15:18.255 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 18:15:18.263 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:15:18.271 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 18:15:18.293 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:15:18.328 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:15:19.548 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 18:15:19.588 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:15:19.666 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 1330.7459ms
+2025-11-23 18:15:19.669 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:15:19.671 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 18:15:19.682 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 1427.4294ms
+2025-11-23 18:17:38.328 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 18:17:38.334 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:38.335 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 6.5847ms
+2025-11-23 18:17:38.342 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 18:17:38.349 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:38.351 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 18:17:38.354 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:38.369 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:17:38.481 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:17:38.539 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 18:17:38.565 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 192.7969ms
+2025-11-23 18:17:38.567 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:38.569 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 18:17:38.571 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 229.0841ms
+2025-11-23 18:17:38.658 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 18:17:38.662 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:38.664 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 6.2784ms
+2025-11-23 18:17:38.669 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 18:17:38.672 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:38.674 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 18:17:38.679 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:38.685 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:17:38.772 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 18:17:38.788 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:17:38.793 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 105.2956ms
+2025-11-23 18:17:38.795 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:38.797 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 18:17:38.800 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 130.9641ms
+2025-11-23 18:17:42.257 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 18:17:42.266 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:42.267 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 10.4778ms
+2025-11-23 18:17:42.284 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 18:17:42.288 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:42.291 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 18:17:42.295 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:42.298 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:17:42.311 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 18:17:42.317 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:17:42.320 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 18.9029ms
+2025-11-23 18:17:42.322 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:42.327 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 18:17:42.330 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 45.3061ms
+2025-11-23 18:17:57.114 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:17:57.119 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:57.121 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 6.2392ms
+2025-11-23 18:17:57.144 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:17:57.147 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:17:57.149 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:17:57.151 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:57.157 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:17:57.176 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:17:57.250 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:17:57.258 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 98.2657ms
+2025-11-23 18:17:57.260 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:17:57.261 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:17:57.264 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 119.4902ms
+2025-11-23 18:19:32.930 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 18:19:32.933 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:19:32.935 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 4.8385ms
+2025-11-23 18:19:32.939 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 18:19:32.944 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:19:32.946 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 18:19:32.948 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:19:32.952 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:19:32.983 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:19:33.035 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:19:33.040 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 86.4273ms
+2025-11-23 18:19:33.043 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:19:33.046 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 18:19:33.049 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 109.3722ms
+2025-11-23 18:19:33.122 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:19:33.127 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:19:33.129 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 7.3502ms
+2025-11-23 18:19:33.138 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:19:33.142 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:19:33.144 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:19:33.148 +02:00 [INF] Response 404 for GET /api/jobposts/2
+2025-11-23 18:19:33.153 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 404 0 null 15.4878ms
+2025-11-23 18:19:33.159 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/api/jobposts/2, Response status code: 404
+2025-11-23 18:23:49.124 +02:00 [INF] Application is shutting down...
+2025-11-23 18:24:11.543 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 18:24:11.598 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 18:24:11.600 +02:00 [INF] Hosting environment: Production
+2025-11-23 18:24:11.601 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 18:25:34.272 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:25:34.318 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:25:34.332 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 61.2437ms
+2025-11-23 18:25:34.350 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:25:34.361 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:25:34.367 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:25:34.400 +02:00 [INF] Executing endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:25:34.462 +02:00 [INF] Route matched with {action = "GetJobPostById", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetJobPostById(Int32) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:25:35.765 +02:00 [INF] Executed DbCommand (45ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`Id` = @__id_0
+LIMIT 1
+2025-11-23 18:25:35.888 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPost'.
+2025-11-23 18:25:35.995 +02:00 [INF] Executed action JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend) in 1525.9763ms
+2025-11-23 18:25:35.998 +02:00 [INF] Executed endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:25:35.999 +02:00 [INF] Response 200 for GET /api/jobposts/2
+2025-11-23 18:25:36.014 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 200 null application/json; charset=utf-8 1665.2097ms
+2025-11-23 18:25:55.614 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:25:55.621 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:25:55.623 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 9.184ms
+2025-11-23 18:25:55.627 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:25:55.632 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:25:55.638 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:25:55.786 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:25:55.845 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:25:55.989 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:25:55.996 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:25:56.011 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 109.8976ms
+2025-11-23 18:25:56.015 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:25:56.017 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:25:56.020 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 392.1965ms
+2025-11-23 18:26:57.084 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 18:26:57.087 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:26:57.090 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 6.3256ms
+2025-11-23 18:26:57.097 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 18:26:57.103 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:26:57.105 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 18:26:57.109 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:26:57.113 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:26:57.249 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:26:57.280 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:26:57.297 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 181.2949ms
+2025-11-23 18:26:57.299 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:26:57.301 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 18:26:57.303 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 206.5165ms
+2025-11-23 18:26:57.365 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:26:57.369 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:26:57.371 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 4.6695ms
+2025-11-23 18:26:57.380 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:26:57.384 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:26:57.386 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:26:57.388 +02:00 [INF] Executing endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:26:57.390 +02:00 [INF] Route matched with {action = "GetJobPostById", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetJobPostById(Int32) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:26:57.405 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`Id` = @__id_0
+LIMIT 1
+2025-11-23 18:26:57.410 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPost'.
+2025-11-23 18:26:57.412 +02:00 [INF] Executed action JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend) in 16.1885ms
+2025-11-23 18:26:57.414 +02:00 [INF] Executed endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:26:57.415 +02:00 [INF] Response 200 for GET /api/jobposts/2
+2025-11-23 18:26:57.418 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 200 null application/json; charset=utf-8 37.5526ms
+2025-11-23 18:28:03.612 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - null null
+2025-11-23 18:28:03.616 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:28:03.618 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - 204 null null 6.1718ms
+2025-11-23 18:28:03.622 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/apply - application/json 280
+2025-11-23 18:28:03.628 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:28:03.630 +02:00 [INF] Incoming request POST /api/applicants/apply
+2025-11-23 18:28:03.633 +02:00 [INF] Executing endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:28:03.637 +02:00 [INF] Route matched with {action = "ApplyForJob", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplyForJob(JobApplication) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:28:03.695 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 18:28:03.737 +02:00 [INF] Executed action ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend) in 96.9251ms
+2025-11-23 18:28:03.739 +02:00 [INF] Executed endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:28:03.741 +02:00 [INF] Response 400 for POST /api/applicants/apply
+2025-11-23 18:28:03.743 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/apply - 400 null application/problem+json; charset=utf-8 121.1695ms
+2025-11-23 18:36:02.761 +02:00 [INF] Application is shutting down...
+2025-11-23 18:36:15.407 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 18:36:15.455 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 18:36:15.457 +02:00 [INF] Hosting environment: Production
+2025-11-23 18:36:15.458 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 18:36:58.055 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:36:58.102 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:36:58.112 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 58.5415ms
+2025-11-23 18:36:58.127 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:36:58.136 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:36:58.142 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:36:58.173 +02:00 [INF] Executing endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:36:58.214 +02:00 [INF] Route matched with {action = "GetJobPostById", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetJobPostById(Int32) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:36:59.539 +02:00 [INF] Executed DbCommand (88ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`Id` = @__id_0
+LIMIT 1
+2025-11-23 18:36:59.694 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPost'.
+2025-11-23 18:36:59.793 +02:00 [INF] Executed action JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend) in 1567.1539ms
+2025-11-23 18:36:59.795 +02:00 [INF] Executed endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:36:59.797 +02:00 [INF] Response 200 for GET /api/jobposts/2
+2025-11-23 18:36:59.810 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 200 null application/json; charset=utf-8 1682.4222ms
+2025-11-23 18:37:24.016 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:37:24.021 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:37:24.023 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 7.2464ms
+2025-11-23 18:37:24.030 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:37:24.035 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:37:24.040 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:37:24.045 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:37:24.051 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:37:24.132 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:37:24.139 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:37:24.152 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 96.9813ms
+2025-11-23 18:37:24.154 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:37:24.157 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:37:24.159 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 129.2635ms
+2025-11-23 18:37:59.998 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 18:38:00.002 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:00.003 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 5.2605ms
+2025-11-23 18:38:00.009 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 18:38:00.017 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:00.019 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 18:38:00.022 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:00.032 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:38:00.173 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:38:00.218 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:38:00.236 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 199.7179ms
+2025-11-23 18:38:00.239 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:00.240 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 18:38:00.243 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 233.3473ms
+2025-11-23 18:38:00.322 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:38:00.327 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:00.328 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 5.7306ms
+2025-11-23 18:38:00.334 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:38:00.338 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:00.340 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:38:00.343 +02:00 [INF] Executing endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:00.345 +02:00 [INF] Route matched with {action = "GetJobPostById", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetJobPostById(Int32) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:38:00.354 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`Id` = @__id_0
+LIMIT 1
+2025-11-23 18:38:00.360 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPost'.
+2025-11-23 18:38:00.362 +02:00 [INF] Executed action JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend) in 14.5338ms
+2025-11-23 18:38:00.365 +02:00 [INF] Executed endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:00.366 +02:00 [INF] Response 200 for GET /api/jobposts/2
+2025-11-23 18:38:00.368 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 200 null application/json; charset=utf-8 34.8001ms
+2025-11-23 18:38:37.994 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - null null
+2025-11-23 18:38:37.998 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:37.999 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - 204 null null 4.9703ms
+2025-11-23 18:38:38.004 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/apply - application/json 254
+2025-11-23 18:38:38.009 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:38:38.010 +02:00 [INF] Incoming request POST /api/applicants/apply
+2025-11-23 18:38:38.012 +02:00 [INF] Executing endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:38.016 +02:00 [INF] Route matched with {action = "ApplyForJob", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplyForJob(JobApplication) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:38:38.055 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 18:38:38.092 +02:00 [INF] Executed action ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend) in 73.0427ms
+2025-11-23 18:38:38.095 +02:00 [INF] Executed endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:38:38.097 +02:00 [INF] Response 400 for POST /api/applicants/apply
+2025-11-23 18:38:38.099 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/apply - 400 null application/problem+json; charset=utf-8 94.9897ms
+2025-11-23 18:40:39.126 +02:00 [INF] Application is shutting down...
+2025-11-23 18:57:06.751 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 18:57:06.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 18:57:06.825 +02:00 [INF] Hosting environment: Production
+2025-11-23 18:57:06.826 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 18:57:27.327 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:57:27.376 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:57:27.388 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 62.9673ms
+2025-11-23 18:57:27.405 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:57:27.413 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:57:27.422 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:57:27.464 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:57:27.511 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:57:28.739 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:57:28.874 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:57:28.967 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 1449.6254ms
+2025-11-23 18:57:28.970 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:57:28.971 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:57:28.984 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 1579.0028ms
+2025-11-23 18:58:05.626 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 18:58:05.632 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:58:05.635 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 7.4898ms
+2025-11-23 18:58:05.642 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 18:58:05.649 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:58:05.650 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 18:58:05.654 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:58:05.666 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 18:58:05.783 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE (`a`.`Username` = @__request_Username_0) AND (`a`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 18:58:05.830 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:58:05.850 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 177.74ms
+2025-11-23 18:58:05.853 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 18:58:05.855 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 18:58:05.858 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 216.0316ms
+2025-11-23 18:58:05.920 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - null null
+2025-11-23 18:58:05.925 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:58:05.927 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/2 - 204 null null 6.2488ms
+2025-11-23 18:58:05.932 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - application/json null
+2025-11-23 18:58:05.940 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:58:05.942 +02:00 [INF] Incoming request GET /api/jobposts/2
+2025-11-23 18:58:05.945 +02:00 [INF] Executing endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:58:05.950 +02:00 [INF] Route matched with {action = "GetJobPostById", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetJobPostById(Int32) on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:58:06.044 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`Id` = @__id_0
+LIMIT 1
+2025-11-23 18:58:06.048 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPost'.
+2025-11-23 18:58:06.051 +02:00 [INF] Executed action JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend) in 98.1241ms
+2025-11-23 18:58:06.054 +02:00 [INF] Executed endpoint 'JobPostsController.GetJobPostById (PSIRA-Recruitment-Backend)'
+2025-11-23 18:58:06.057 +02:00 [INF] Response 200 for GET /api/jobposts/2
+2025-11-23 18:58:06.060 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/2 - 200 null application/json; charset=utf-8 127.9581ms
+2025-11-23 18:59:23.608 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - null null
+2025-11-23 18:59:23.612 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:59:23.613 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/applicants/apply - 204 null null 4.9394ms
+2025-11-23 18:59:23.619 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/applicants/apply - application/json 260
+2025-11-23 18:59:23.625 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:59:23.627 +02:00 [INF] Incoming request POST /api/applicants/apply
+2025-11-23 18:59:23.629 +02:00 [INF] Executing endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:59:23.633 +02:00 [INF] Route matched with {action = "ApplyForJob", controller = "Applicants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplyForJob(JobApplication) on controller ApplicantsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:59:23.888 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `JobApplications` (`ApplicantId`, `ApplicationDate`, `CurrentCompany`, `CurrentPosition`, `CurrentSalary`, `HasDriversLicense`, `HighestQualification`, `JobPostId`, `TotalExperience`, `YearsWithCurrentEmployer`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT `Id`
+FROM `JobApplications`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-11-23 18:59:23.934 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 18:59:23.940 +02:00 [INF] Executed action ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend) in 302.2685ms
+2025-11-23 18:59:23.942 +02:00 [INF] Executed endpoint 'ApplicantsController.ApplyForJob (PSIRA-Recruitment-Backend)'
+2025-11-23 18:59:23.944 +02:00 [INF] Response 200 for POST /api/applicants/apply
+2025-11-23 18:59:23.946 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/applicants/apply - 200 null application/json; charset=utf-8 327.66ms
+2025-11-23 18:59:27.002 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 18:59:27.006 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:59:27.007 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 5.3374ms
+2025-11-23 18:59:27.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 18:59:27.015 +02:00 [INF] CORS policy execution successful.
+2025-11-23 18:59:27.017 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 18:59:27.019 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:59:27.021 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 18:59:27.033 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 18:59:27.040 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 18:59:27.042 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 17.9104ms
+2025-11-23 18:59:27.044 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 18:59:27.045 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 18:59:27.048 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 36.2922ms
+2025-11-23 19:01:08.045 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 19:01:08.049 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:08.051 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 5.3677ms
+2025-11-23 19:01:08.055 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 19:01:08.060 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:08.062 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 19:01:08.064 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:08.068 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 19:01:08.089 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE (`h`.`Username` = @__request_Username_0) AND (`h`.`Password` = @__request_Password_1)
+LIMIT 1
+2025-11-23 19:01:08.107 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 19:01:08.115 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 44.5219ms
+2025-11-23 19:01:08.118 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:08.120 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 19:01:08.124 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 68.5263ms
+2025-11-23 19:01:08.269 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 19:01:08.273 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:08.277 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 8.3797ms
+2025-11-23 19:01:08.316 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 19:01:08.320 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:08.321 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 19:01:08.324 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:08.329 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 19:01:08.343 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 19:01:08.347 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:01:08.350 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 17.6106ms
+2025-11-23 19:01:08.352 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:08.354 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 19:01:08.365 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 48.9058ms
+2025-11-23 19:01:20.346 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - null null
+2025-11-23 19:01:20.349 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:20.351 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/closed - 204 null null 4.9209ms
+2025-11-23 19:01:20.360 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - application/json null
+2025-11-23 19:01:20.364 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:01:20.366 +02:00 [INF] Incoming request GET /api/jobposts/closed
+2025-11-23 19:01:20.367 +02:00 [INF] Executing endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:20.373 +02:00 [INF] Route matched with {action = "GetClosedJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetClosedJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 19:01:20.394 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE `j`.`ClosingDate` < @__today_0
+2025-11-23 19:01:20.398 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:01:20.400 +02:00 [INF] Executed action JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend) in 23.5714ms
+2025-11-23 19:01:20.406 +02:00 [INF] Executed endpoint 'JobPostsController.GetClosedJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 19:01:20.407 +02:00 [INF] Response 200 for GET /api/jobposts/closed
+2025-11-23 19:01:20.410 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/closed - 200 null application/json; charset=utf-8 49.7143ms
+2025-11-23 19:07:14.124 +02:00 [INF] Application is shutting down...
+2025-11-23 19:07:45.777 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 19:07:45.832 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 19:07:45.834 +02:00 [INF] Hosting environment: Production
+2025-11-23 19:07:45.835 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 19:11:42.597 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 19:11:42.647 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:11:42.659 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 65.308ms
+2025-11-23 19:11:42.673 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 19:11:42.682 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:11:42.687 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 19:11:42.705 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:11:42.745 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 19:11:44.184 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[@__request_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE `h`.`Username` = @__request_Username_0
+LIMIT 1
+2025-11-23 19:11:44.411 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `HRAdmins` SET `Password` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-11-23 19:11:44.429 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 19:11:44.470 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 1717.254ms
+2025-11-23 19:11:44.473 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:11:44.475 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 19:11:44.491 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 1818.5541ms
+2025-11-23 19:11:44.582 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 19:11:44.589 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:11:44.591 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 8.5526ms
+2025-11-23 19:11:44.597 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 19:11:44.604 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:11:44.611 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 19:11:44.625 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:11:44.632 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 19:11:44.685 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 19:11:44.709 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:11:44.729 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 93.8624ms
+2025-11-23 19:11:44.734 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:11:44.737 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 19:11:44.740 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 143.524ms
+2025-11-23 19:13:52.691 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - null null
+2025-11-23 19:13:52.695 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:13:52.697 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/admin-login - 204 null null 5.6306ms
+2025-11-23 19:13:52.703 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - application/json 44
+2025-11-23 19:13:52.708 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:13:52.710 +02:00 [INF] Incoming request POST /api/auth/admin-login
+2025-11-23 19:13:52.713 +02:00 [INF] Executing endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:13:52.715 +02:00 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 19:13:52.829 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Password`, `h`.`Position`, `h`.`Username`
+FROM `HRAdmins` AS `h`
+WHERE `h`.`Username` = @__request_Username_0
+LIMIT 1
+2025-11-23 19:13:52.882 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 19:13:52.887 +02:00 [INF] Executed action AuthController.AdminLogin (PSIRA-Recruitment-Backend) in 168.9285ms
+2025-11-23 19:13:52.889 +02:00 [INF] Executed endpoint 'AuthController.AdminLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:13:52.891 +02:00 [INF] Response 200 for POST /api/auth/admin-login
+2025-11-23 19:13:52.894 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/admin-login - 200 null application/json; charset=utf-8 190.8923ms
+2025-11-23 19:13:53.027 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - null null
+2025-11-23 19:13:53.034 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:13:53.036 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts/businessunits - 204 null null 7.9986ms
+2025-11-23 19:13:53.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - application/json null
+2025-11-23 19:13:53.068 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:13:53.070 +02:00 [INF] Incoming request GET /api/jobposts/businessunits
+2025-11-23 19:13:53.074 +02:00 [INF] Executing endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:13:53.075 +02:00 [INF] Route matched with {action = "GetBusinessUnits", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBusinessUnits() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 19:13:53.083 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Name`
+FROM `BusinessUnits` AS `b`
+2025-11-23 19:13:53.089 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessUnit, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:13:53.092 +02:00 [INF] Executed action JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend) in 13.6718ms
+2025-11-23 19:13:53.094 +02:00 [INF] Executed endpoint 'JobPostsController.GetBusinessUnits (PSIRA-Recruitment-Backend)'
+2025-11-23 19:13:53.095 +02:00 [INF] Response 200 for GET /api/jobposts/businessunits
+2025-11-23 19:13:53.099 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts/businessunits - 200 null application/json; charset=utf-8 39.2714ms
+2025-11-23 19:15:10.314 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 19:15:10.319 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:15:10.321 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 204 null null 7.3262ms
+2025-11-23 19:15:10.327 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 58
+2025-11-23 19:15:10.333 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:15:10.335 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 19:15:10.337 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:15:10.341 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 19:15:10.374 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CVFilePath`, `a`.`CellphoneNumber`, `a`.`CreatedAt`, `a`.`Email`, `a`.`HomeAddress`, `a`.`IDNumber`, `a`.`Name`, `a`.`Password`, `a`.`Province`, `a`.`Surname`, `a`.`Username`, `a`.`WorkNumber`
+FROM `Applicants` AS `a`
+WHERE `a`.`Username` = @__request_Username_0
+LIMIT 1
+2025-11-23 19:15:10.508 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Applicants` SET `Password` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-11-23 19:15:10.513 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Applicant, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:15:10.528 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 184.8427ms
+2025-11-23 19:15:10.531 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 19:15:10.532 +02:00 [INF] Response 200 for POST /api/auth/applicant-login
+2025-11-23 19:15:10.536 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 200 null application/json; charset=utf-8 208.5197ms
+2025-11-23 19:15:10.657 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null null
+2025-11-23 19:15:10.661 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:15:10.662 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 204 null null 5.0603ms
+2025-11-23 19:15:10.670 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/jobposts - application/json null
+2025-11-23 19:15:10.675 +02:00 [INF] CORS policy execution successful.
+2025-11-23 19:15:10.676 +02:00 [INF] Incoming request GET /api/jobposts
+2025-11-23 19:15:10.678 +02:00 [INF] Executing endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 19:15:10.684 +02:00 [INF] Route matched with {action = "GetActiveJobPosts", controller = "JobPosts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActiveJobPosts() on controller JobPostsController (PSIRA-Recruitment-Backend).
+2025-11-23 19:15:10.818 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__today_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `j`.`Id`, `j`.`BusinessUnitId`, `j`.`ClosingDate`, `j`.`CreatedAt`, `j`.`DriversLicenseRequired`, `j`.`ExperienceRequired`, `j`.`IsActive`, `j`.`JobDescription`, `j`.`ManagerEmail`, `j`.`ManagerName`, `j`.`OpeningDate`, `j`.`PostName`, `j`.`QualificationRequired`, `b`.`Id`, `b`.`Name`
+FROM `JobPosts` AS `j`
+INNER JOIN `BusinessUnits` AS `b` ON `j`.`BusinessUnitId` = `b`.`Id`
+WHERE (`j`.`IsActive` AND (`j`.`OpeningDate` <= @__today_0)) AND (`j`.`ClosingDate` >= @__today_0)
+2025-11-23 19:15:10.860 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPost, PSIRA-Recruitment-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-23 19:15:10.869 +02:00 [INF] Executed action JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend) in 181.2596ms
+2025-11-23 19:15:10.871 +02:00 [INF] Executed endpoint 'JobPostsController.GetActiveJobPosts (PSIRA-Recruitment-Backend)'
+2025-11-23 19:15:10.873 +02:00 [INF] Response 200 for GET /api/jobposts
+2025-11-23 19:15:10.875 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/jobposts - 200 null application/json; charset=utf-8 204.9033ms
+2025-11-23 20:03:36.661 +02:00 [INF] Application is shutting down...

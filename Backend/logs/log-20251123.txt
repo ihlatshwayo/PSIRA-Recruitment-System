@@ -1,0 +1,49 @@
+2025-11-23 14:13:36.407 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 14:13:36.508 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 14:13:36.513 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 14:13:36.515 +02:00 [INF] Hosting environment: Development
+2025-11-23 14:13:36.517 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 14:35:09.746 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 14:35:09.841 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 14:35:09.847 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 14:35:09.849 +02:00 [INF] Hosting environment: Production
+2025-11-23 14:35:09.850 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 14:53:29.318 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - null 0
+2025-11-23 14:53:29.357 +02:00 [INF] Incoming request OPTIONS /api/jobposts
+2025-11-23 14:53:29.375 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:53:29.377 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:53:29.379 +02:00 [INF] Response 405 for OPTIONS /api/jobposts
+2025-11-23 14:53:29.383 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/jobposts - 405 0 null 68.3926ms
+2025-11-23 14:53:47.082 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null 0
+2025-11-23 14:53:47.089 +02:00 [INF] Incoming request OPTIONS /api/auth/applicant-login
+2025-11-23 14:53:47.093 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:53:47.095 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:53:47.096 +02:00 [INF] Response 405 for OPTIONS /api/auth/applicant-login
+2025-11-23 14:53:47.099 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 405 0 null 16.6467ms
+2025-11-23 14:55:19.691 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 14:55:19.776 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 14:55:19.781 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 14:55:19.783 +02:00 [INF] Hosting environment: Production
+2025-11-23 14:55:19.785 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 14:55:44.428 +02:00 [INF] Application is shutting down...
+2025-11-23 14:56:34.498 +02:00 [WRN] The WebRootPath was not found: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend\wwwroot. Static files may be unavailable.
+2025-11-23 14:56:34.598 +02:00 [INF] Now listening on: http://localhost:5000
+2025-11-23 14:56:34.604 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-23 14:56:34.605 +02:00 [INF] Hosting environment: Production
+2025-11-23 14:56:34.607 +02:00 [INF] Content root path: C:\Users\Themba\Downloads\PSIRA-Recruitment-System\Backend
+2025-11-23 14:58:15.277 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - null null
+2025-11-23 14:58:15.290 +02:00 [INF] Incoming request OPTIONS /api/auth/applicant-login
+2025-11-23 14:58:15.325 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:58:15.327 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-23 14:58:15.329 +02:00 [INF] Response 405 for OPTIONS /api/auth/applicant-login
+2025-11-23 14:58:15.338 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/applicant-login - 405 0 null 62.8748ms
+2025-11-23 14:58:45.061 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - application/json 2
+2025-11-23 14:58:45.067 +02:00 [INF] Incoming request POST /api/auth/applicant-login
+2025-11-23 14:58:45.076 +02:00 [INF] CORS policy execution successful.
+2025-11-23 14:58:45.082 +02:00 [INF] Executing endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 14:58:45.132 +02:00 [INF] Route matched with {action = "ApplicantLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ApplicantLogin(LoginRequest) on controller AuthController (PSIRA-Recruitment-Backend).
+2025-11-23 14:58:46.187 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-23 14:58:46.245 +02:00 [INF] Executed action AuthController.ApplicantLogin (PSIRA-Recruitment-Backend) in 1103.6019ms
+2025-11-23 14:58:46.248 +02:00 [INF] Executed endpoint 'AuthController.ApplicantLogin (PSIRA-Recruitment-Backend)'
+2025-11-23 14:58:46.249 +02:00 [INF] Response 400 for POST /api/auth/applicant-login
+2025-11-23 14:58:46.254 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/applicant-login - 400 null application/problem+json; charset=utf-8 1193.2467ms
